@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 
@@ -51,7 +52,7 @@
 									<h2>I am Antonia Valdivieso</h2>
 									<p>I am a final year Computer Engineering student at DuocUC Professional Institute - Chile, i am 23 years old and i love create visuals and make code.</p>
 									<ul class="actions">
-										<li><a href="#two" class="button">Learn more</a></li>
+										<li><a href="#two" class="button scrolly">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
@@ -89,9 +90,14 @@
 									<h3>UI/UX</h3>
 									<p>User interface and User experience with Figma.</p>
 								</section>
+								<section>
+									<span class="icon major fa-mobile"></span>
+									<h3>UI/UX</h3>
+									<p>User interface and User experience with Figma.</p>
+								</section>
 							</div>
 							<ul class="actions">
-								<li><a href="#three" class="button">If you interested, Write me!</a></li>
+								<li><a href="#three" class="button scrolly">If you interested, Write me!</a></li>
 							</ul>
 						</div>
 					</section>
@@ -103,23 +109,25 @@
 							<p>If you need someone like me 😀</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form id="form" method="post" action="https://formspree.io/f/xvoyqbel">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name" required/>
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<input type="text" name="email" id="email" required />
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												<textarea name="message" id="message" rows="5" required></textarea>
 											</div>
 										</div>
+										
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
+											<button type="submit">Send Message</button>
+											<a href="mailto:valdivieso.ant@gmail.com" id="truco" style="opacity: 0;">Mail to</a>
 										</ul>
 									</form>
 								</section>
@@ -127,7 +135,7 @@
 									<ul class="contact">
 										<li>
 											<h3>Address</h3>
-											<span>Santiago<br />
+											<span>Santiago,<br />
 											Chile <br /></span>
 										</li>
 										<li>
@@ -153,15 +161,6 @@
 
 			</div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
-
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -171,5 +170,6 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
+			
 	</body>
 </html>
